@@ -36,6 +36,6 @@ int main(void) {
     };
     Can_ReturnType wr = Can_Write(CAN_HTH_0, &pdu);
 
-    while(1); /* sur MCU réel */
+     // while(1); 
     return 0;
 }
