@@ -1,6 +1,6 @@
 /**
  * test_can_init.c
- * Test minimal : initialise le driver et vérifie l'état
+ * minimal test : initialize the driver and verify its state 
  */
 #include "Can.h"
 #include "Can_Cfg.h"
@@ -19,14 +19,14 @@ int main(void) {
     /* Test 1 : Init */
     Can_Init(&Can_DefaultConfig);
 
-    /* Test 2 : GetControllerMode → doit être STOPPED après Init */
+    /* Test 2 : GetControllerMode → should be STOPPED after Init */
     Can_GetControllerMode(CAN_CONTROLLER_0, &mode);
 
     /* Test 3 : SetControllerMode → START */
     Std_ReturnType ret = Can_SetControllerMode(CAN_CONTROLLER_0,
                                                CAN_CS_STARTED);
 
-    /* Test 4 : Write un frame */
+    /* Test 4 : Write a frame */
     uint8 data[4] = {0xDE, 0xAD, 0xBE, 0xEF};
     Can_PduType pdu = {
         .swPduHandle = 0,
