@@ -2,7 +2,7 @@
  * @file    Can.c
  * @brief   AUTOSAR CAN Driver — SWS_CAN R4.3
  *          Target: NXP S32K144 FlexCAN
- * @author  PFE Master — Driver CAN AUTOSAR Compliant
+ * @author  Slimani Anass  —  Driver CAN AUTOSAR Compliant
  */
 
 #include "Can.h"
